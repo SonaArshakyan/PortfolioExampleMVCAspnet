@@ -1,0 +1,349 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive !important;
+    background: url(../Images/body-bg.png) no-repeat center;
+}
+
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+#Nav-Bar {
+    background-color: #f9f9fd;
+    padding: 20px 0px 20px;
+    font-family: cursive;
+    box-shadow: 0 5px 20px #777;
+    position: sticky;
+    top: 0;
+    border: none;
+    transition: 0.7s !important;
+}
+
+#navbar-brand {
+    color: #4458dc;
+    font-size: 30px;
+}
+
+
+#NavBar li {
+    color: #000000;
+    font-size: 20px;
+}
+
+    #NavBar li:hover {
+        color: #4458dc;
+        font-size: 25px;
+    }
+
+@media only screen and (max-width: 770px) {
+    #NavBar {
+        float: left !important;
+    }
+
+    #Nav-Bar {
+        background-color: #343a40 !important;
+    }
+
+    #NavBar li {
+        color: #fff;
+        line-height: 40px;
+    }
+
+    #navbar-brand {
+        font-size: 25px;
+    }
+}
+
+
+.MainContextFirst {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.MainContextFirstDiv h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+    .MainContextFirstDiv h3::after {
+        content: '';
+        width: 410px;
+        height: 2px;
+        position: absolute;
+        top: 25%;
+        left: 23%;
+        background: #000000;
+    }
+
+
+
+@media only screen and (max-width: 570px) {
+    .MainContextFirstDiv h3::after {
+        display: none;
+    }
+}
+
+.primary_btn span {
+    padding: 0 42px;
+}
+
+.primary_btn {
+    text-decoration: none !important;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 46px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: double 2px transparent;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+}
+
+    .primary_btn.tr-bg {
+        background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+        border: 2px solid transparent;
+        color: #222222;
+        box-shadow: none;
+    }
+
+        .primary_btn.tr-bg:hover {
+            background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+            border: double 2px transparent;
+            color: #ffffff;
+            box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+        }
+
+
+    .primary_btn:hover {
+        background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+        border: 2px solid #854fee;
+        color: #222222;
+        box-shadow: none;
+        background-clip: border-box;
+    }
+
+.MainContextSecond {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.MainContextSecond-Right-Div p {
+    font-size: 15px;
+}
+
+.MainContextThird {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.MainContextThird-Image-Div {
+    margin-bottom: 5%;
+    width: 170px;
+    height: 100px;
+    cursor: pointer;
+    border: 1px solid #eeeeee;
+    box-shadow: none;
+    transition: all 0.4s ease 0s;
+}
+
+    .MainContextThird-Image-Div img {
+        max-width: 80px;
+        margin: 0 auto;
+        transition: all 0.4s ease 0s;
+        vertical-align: middle;
+        border-style: none;
+        box-shadow: none;
+        margin-top: 30px;
+    }
+
+.MainContextThird-Image-Divs :hover {
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.MainContextThird-Image-Div img:hover {
+    box-shadow: none;
+}
+
+.MainContextThird-Left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.MainContextThird-Right {
+    padding: 25px 30px;
+    background: #faf8ff;
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+}
+
+    .MainContextThird-Right:before {
+        content: '';
+        position: absolute;
+        top: -25px;
+        left: -50px;
+        background: url(../Images/client-info-bg.png) no-repeat;
+        height: 175px;
+        width: 175px;
+    }
+
+    .MainContextThird-Right .lage {
+        color: #854fee;
+        font-family: "Rubik", sans-serif;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 85px;
+        position: relative;
+        z-index: 9;
+    }
+
+.MainContextFourth {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    text-align: center;
+    justify-content: center;
+    padding: 45px 25px;
+    background: #f9f9fd;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+    .card:hover {
+        box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+        background: #fff;
+    }
+
+.cardsRow {
+    padding-top: 80px;
+}
+
+.MainContextFifth {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.filter li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #222222;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+.filter .active {
+    color: #854fee;
+}
+
+.filter li :hover {
+    color: #854fee;
+}
+
+.filter {
+    padding: 0;
+}
+
+.cardfilter img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+}
+
+    .cardfilter img:hover {
+        filter: brightness(100%);
+        transform: scale(1.1);
+    }
+
+.MainContextSixth {
+    padding: 150px 0px;
+    background-image: url(../Images/subscribe-bg.png);
+}
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+    .formDiv input {
+        min-width: 380px;
+        max-width: 380px;
+        line-height: 48px;
+        padding: 0 25px;
+        border: 1px solid #ffffff;
+        background: transparent;
+        font-weight: 400;
+        border-radius: 5px;
+        color: #ffffff;
+        height: 50px;
+    }
+
+    .formDiv button {
+        background: #ffffff;
+        text-transform: uppercase;
+        color: #222222;
+        border-radius: 5px;
+        line-height: 48px;
+        font-size: 14px;
+        font-family: "Rubik", sans-serif;
+        padding: 0px 38px;
+        cursor: pointer;
+    }
+
+.MainContextSixth-LastDiv p {
+    line-height: 26px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .formDiv {
+        flex-flow: column;
+    }
+
+        .formDiv input {
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        .formDiv button {
+            width: 100%;
+        }
+}
+
+.footerModel {
+    padding: 120px 0;
+    position: relative;
+}
+
+    .footerModel h4 {
+        text-align: center;
+        font-size: 20px;
+        color: #000000;
+        margin-top: 35px;
+        text-transform: uppercase;
+    }
